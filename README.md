@@ -23,6 +23,8 @@ Click **More info**, then **Run anyway**. Then click through the installer (no a
 
 > Whether this box appears depends on how the file got onto the PC: downloaded with a browser → it usually appears; copied from a USB stick → usually not. Both are the same file.
 
+> **Tip — skip the box entirely:** before running the installer, right-click it → **Properties** → at the bottom of the **General** tab tick **Unblock** → **OK**. Windows then treats it like a file copied from a USB stick, and the box doesn't appear. (No Unblock checkbox there? Then the file isn't marked, and there won't be a box anyway.)
+
 **2. Install Npcap when the installer asks.**
 At the end the installer checks for **Npcap**, the free driver that lets the app see network traffic (it's from the makers of Nmap and Wireshark). If it's missing, a box asks to open the Npcap page — click **Yes**.
 
@@ -57,7 +59,7 @@ When you first press **Start check**, Windows Defender Firewall may ask whether 
 
 | What you see | What to do |
 |---|---|
-| "Windows protected your PC" | **More info → Run anyway** (see step 1). |
+| "Windows protected your PC" | **More info → Run anyway** — or next time **Properties → Unblock** first (see step 1). |
 | A banner "One more step on Windows: install Npcap" | Follow the three steps in the banner. |
 | "Npcap is installed without loopback support" | Run the Npcap installer again and tick **Support loopback traffic**. |
 | No adapters in the list (Windows) | Npcap is missing or was installed with "Administrators only" — reinstall it with that option unticked. |
@@ -84,6 +86,8 @@ Das ist keine Virenwarnung — Windows kennt den Herausgeber nur noch nicht, wei
 **Weitere Informationen** klicken, dann **Trotzdem ausführen**. Danach durch den Installer klicken (kein Admin-Passwort nötig).
 
 > Ob das Fenster kommt, hängt davon ab, wie die Datei auf den PC kam: mit dem Browser heruntergeladen → meistens ja; vom USB-Stick kopiert → meistens nicht. Es ist dieselbe Datei.
+
+> **Tipp — das Fenster ganz vermeiden:** vor dem Starten Rechtsklick auf den Installer → **Eigenschaften** → unten im Reiter **Allgemein** **Zulassen** anhaken → **OK**. Windows behandelt die Datei dann wie eine vom USB-Stick kopierte, und das Fenster kommt nicht. (Kein Kästchen „Zulassen“ da? Dann ist die Datei nicht markiert, und es kommt sowieso kein Fenster.)
 
 **2. Npcap installieren, wenn der Installer fragt.**
 Am Ende prüft der Installer, ob **Npcap** da ist — der kostenlose Treiber, mit dem die App Netzwerkverkehr sieht (von den Machern von Nmap und Wireshark). Fehlt er, fragt ein Fenster, ob die Npcap-Seite geöffnet werden soll — **Ja** klicken.
@@ -119,7 +123,7 @@ Beim ersten **Check starten** fragt evtl. die Windows-Defender-Firewall, ob die 
 
 | Was du siehst | Was tun |
 |---|---|
-| „Der Computer wurde durch Windows geschützt“ | **Weitere Informationen → Trotzdem ausführen** (siehe Schritt 1). |
+| „Der Computer wurde durch Windows geschützt“ | **Weitere Informationen → Trotzdem ausführen** — oder beim nächsten Mal vorher **Eigenschaften → Zulassen** (siehe Schritt 1). |
 | Banner „Noch ein Schritt unter Windows: Npcap installieren“ | Den drei Schritten im Banner folgen. |
 | „Npcap ist ohne Loopback-Unterstützung installiert“ | Npcap-Installer noch einmal ausführen und **Support loopback traffic** anhaken. |
 | Keine Adapter in der Liste (Windows) | Npcap fehlt oder wurde mit „Administrators only“ installiert — ohne diese Option neu installieren. |
